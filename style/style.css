@@ -43,7 +43,7 @@ body{
     margin: 20px 0 10px 0;
 }
 
-.enterNumbers{
+.enterNumbers, .answers{ 
     margin: 10px 0 10px 0;
 }
 
@@ -61,10 +61,6 @@ body{
     text-transform: uppercase;
     margin: 10px 0 10px 0;
     border-radius: 30px;
-}
-
-.answers{
-    margin: 10px 0 10px 0;
 }
 
 /* SQUARE */
