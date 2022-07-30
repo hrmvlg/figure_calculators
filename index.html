@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="/script/square.js"></script>
+    <script src="/script/rectangle.js"></script>
+    <script src="/script/curcle.js"></script>
+    <script src="/script/triangle.js"></script>
     <title>Калькуляторы фигур</title>
 </head>
 
@@ -72,59 +76,14 @@
                 a: <input class="number-input" type="number" id="triangleASide">
                 b: <input class="number-input" type="number" id="triangleBSide">
                 c: <input class="number-input" type="number" id="triangleCSide">
-                <button class="calculate-button" onclick="circle()">
+                <button class="calculate-button" onclick="triangle()">
                     Рассчитать
                 </button>
             </div>
-            <div class="circleAnswers">
-                <span> Площадь: <span id="circleArea"></span> </span>   
+            <div class="triangleAnswers">
+                <span> Площадь: <span id="trianglePerimeter"></span> </span>   
             </div>
         </div>
-        <script>
-            var squareSide;
-            var squarePerimeter;
-            var squareArea;
-
-            function square() {
-                squareSide = Number(document.getElementById("squareSide").value);
-                squareArea = Math.pow(squareSide, 2);
-                squarePerimeter = squareArea * 4;
-
-                document.getElementById("squareArea").innerHTML = squareArea;
-                document.getElementById("squarePerimetr").innerHTML = squarePerimeter;
-            }
-
-            var rectangleASide;
-            var rectangleBSide;
-            var rectanglePerimeter;
-            var rectangleArea;
-
-            function rectangle() {
-                rectangleASide = Number(document.getElementById("rectangleASide").value);
-                rectangleBSide = Number(document.getElementById("rectangleBSide").value);
-
-                rectangleArea = rectangleASide * rectangleBSide;
-                rectanglePerimeter = 2 * (rectangleASide + rectangleBSide);
-
-                document.getElementById("rectangleArea").innerHTML = rectangleArea;
-                document.getElementById("rectanglePerimeter").innerHTML = rectanglePerimeter;
-            }
-
-            var circleRadius;
-            var circleArea;
-            var circleLength;
-
-            function circle(){
-                circleRadius = Number(document.getElementById("circleRadius").value);
-
-                circleArea = Math.pow(circleRadius, 2)*Math.PI;
-                circleLength = 2 * circleRadius * Math.PI;
-
-                document.getElementById('circleArea').innerHTML = circleArea;
-                document.getElementById('circleLength').innerHTML = circleLength;
-
-            }
-        </script>
     </div>
 </body>
 
