@@ -18,17 +18,16 @@
     <h1 class="main-header">Калькуляторы фигур</h1>
     <div class="container">
         <div class="card">
-            <div class="card__header">Полощадь и периметр квадрата</div>
+            <div class="card__header">Полощадь и периметр<br>квадрата</div>
             <div class="squareImage figures"></div>
             <div class="card__numbers-header">Введите сторону a:</div>
-            <div class="squareNumbers">
-                a: <input class="number-input" type="number" id="squareSide">
-                <button class="calculate-button" onclick="square()">
-                    Рассчитать
-                </button>
-
+            <div class="squareNumbers enterNumbers">
+                a: <input class="number-input" type="number" min="1" id="squareSide">
             </div>
-            <div class="squareAnswers">
+            <button class="calculate-button" onclick="square()">
+                Рассчитать
+            </button>
+            <div class="answers">
                 <span> Площадь: <span id="squareArea"></span> </span>
                 <br>
                 <span> Периметр: <span id="squarePerimetr"></span></span>
@@ -39,14 +38,14 @@
             <div class="card__header">Полощадь и периметр прямоугольника</div>
             <div class="rectangleImage figures"></div>
             <div class="card__numbers-header">Введите стороны a и b:</div>
-            <div class="rectangleNumbers">
-                a: <input class="number-input" type="number" id="rectangleASide">
-                b: <input class="number-input" type="number" id="rectangleBSide">
-                <button class="calculate-button" onclick="rectangle()">
-                    Рассчитать
-                </button>
+            <div class="rectangleNumbers enterNumbers">
+                a: <input class="number-input" type="number" min="1" id="rectangleASide">
+                b: <input class="number-input" type="number" min="1" id="rectangleBSide">
             </div>
-            <div class="rectangleAnswers">
+            <button class="calculate-button" onclick="rectangle()">
+                Рассчитать
+            </button>
+            <div class="answers">
                 <span> Площадь: <span id="rectangleArea"></span> </span>
                 <br>
                 <span> Периметр: <span id="rectanglePerimeter"></span></span>
@@ -56,13 +55,13 @@
             <div class="card__header">Площадь круга и длина окружности</div>
             <div class="circleImage figures"></div>
             <div class="card__numbers-header">Введите стороны a и b:</div>
-            <div class="circleNumbers">
-                r: <input class="number-input" type="number" id="circleRadius">
-                <button class="calculate-button" onclick="circle()">
-                    Рассчитать
-                </button>
+            <div class="circleNumbers enterNumbers">
+                r: <input class="number-input" type="number" min="1" id="circleRadius">
             </div>
-            <div class="circleAnswers">
+            <button class="calculate-button" onclick="circle()">
+                Рассчитать
+            </button>
+            <div class="answers">
                 <span> Площадь: <span id="circleArea"></span> </span>
                 <br>
                 <span> Длина: <span id="circleLength"></span></span>
@@ -72,15 +71,15 @@
             <div class="card__header">Площадь треугольника по трем сторонам</div>
             <div class="triangleImage figures"></div>
             <div class="card__numbers-header">Введите стороны a, b и c:</div>
-            <div class="triangleNumbers">
-                a: <input class="number-input" type="number" id="triangleASide">
-                b: <input class="number-input" type="number" id="triangleBSide">
-                c: <input class="number-input" type="number" id="triangleCSide">
-                <button class="calculate-button" onclick="triangle()">
-                    Рассчитать
-                </button>
+            <div class="triangleNumbers enterNumbers">
+                a: <input class="number-input" type="number" min="1" id="triangleASide">
+                b: <input class="number-input" type="number" min="1" id="triangleBSide">
+                c: <input class="number-input" type="number" min="1" id="triangleCSide">
             </div>
-            <div class="triangleAnswers">
+            <button class="calculate-button" onclick="triangle()">
+                Рассчитать
+            </button>
+            <div class="answers">
                 <span> Площадь: <span id="trianglePerimeter"></span> </span>   
             </div>
         </div>
